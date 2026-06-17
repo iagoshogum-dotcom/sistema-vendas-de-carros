@@ -1,3 +1,4 @@
-def printDic(n1,n2):
-    for n1,dados in n2.itens():
-        print(dados)
+def printL():
+    print(f"""{"ID":>5} | {"NOME":^15} | {"QUANTIDADE":<10} | {"VALOR":<10}
+    {"▞▞▞▞▞▖"*45}
+    {veiculo:<5} | {nome:<15} | {quantidade:<10} | {valor:<10}""")
