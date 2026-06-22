@@ -1,7 +1,6 @@
 import random
 import webbrowser
 from funcoes_criadas import *
-import webbrowser
 VERMELHO = "\033[38;5;196m"
 RESET = "\033[0m"
 GRAFITE = "\033[38;5;240m"
