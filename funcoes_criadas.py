@@ -47,8 +47,7 @@ def registrar_veiculo(estoque):
     veiculo += str(random.randint(0, 1000))
 
     nome, valor, quantidade = input(
-        "digite o nome do veiculo o valor e a quantidade: "
-    ).split()
+        "digite o nome do veiculo o valor e a quantidade separados por virgula: ").split(",")
 
     estoque[veiculo] = {
         "nome": nome,
@@ -59,7 +58,7 @@ def registrar_veiculo(estoque):
     return veiculo
 
 def carrinho_sistema(n1,n2):
-    escolhaV = input("escolha um carro do catalogo")
+    escolhaV = input("escolha um veiculo do catalogo")
     if escolhaV in n1:
         qtd = int(input("quantos deseja comprar"))
         if n1[escolhaV]["quantidade"] >= qtd:
